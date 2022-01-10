@@ -1,0 +1,32 @@
+﻿@charset "utf-8";
+
+body {
+    margin: 20px;
+}
+
+h1 {
+    margin: 30px;
+    text-align: center;
+}
+
+p {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    text-indent: 30px;
+    text-justify: auto;
+    line-height: 2em;
+}
+
+picture {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+    footer > p {
+        margin: 100px 30% 0 30%;
+    }

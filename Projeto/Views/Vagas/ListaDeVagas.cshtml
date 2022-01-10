@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Projeto.Models.Vaga>
+@{
+    ViewData["Title"] = "ListaDeVagas";
+}
+<link rel="stylesheet" href="~/css/ListaDeVagas.css">
+
+<div class="container">
+    <h2 class="d-flex justify-content-center">Vagas disponíveis:</h2>
+    @{
+        foreach (var item in Model)
+        {
+        <div>
+            <div class="card text-center mt-5">
+                    <div id="Cargo" class="card-header" @*style="background-color: #d6dd90"*@>
+                        @item.Cargo
+                    </div>
+                <div class="card-body">
+                    <h5 id="tit" class="card-title">@item.Empresa</h5>
+                    <p class="card-text">
+                        @item.Descricao
+                    </p>
+                    <h6>@item.Salario</h6>
+                    <h6>@item.Beneficios</h6>
+                    <h6>@item.CargaHoraria</h6>
+                    <a asp-controller="Candidaturas" asp-action="Candidatar" class="btn btn-primary">Candidatar-se</a>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+        </div>
+        }
+
+    }
+</div>

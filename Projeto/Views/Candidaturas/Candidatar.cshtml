@@ -1,0 +1,56 @@
+﻿@model Projeto.Models.Candidatura
+
+
+
+@{
+    ViewData["Title"] = "Candidatar";
+}
+
+<h4>Candidatura</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4 m-5" >
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdEmpresa" class="control-label"></label>
+                <select asp-for="IdEmpresa" class="form-control" asp-items="ViewBag.IdEmpresa"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdCurso" class="control-label"></label>
+                <select asp-for="IdCurso" class="form-control" asp-items="ViewBag.IdCurso"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdVaga" class="control-label"></label>
+                <select asp-for="IdVaga" class="form-control" asp-items="ViewBag.IdVaga"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdUsuario" class="control-label"></label>
+                <select asp-for="IdUsuario" class="form-control" asp-items="ViewBag.IdUsuario"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Candidatar" class="btn btn-primary" onclick=Efetuado() />
+                <script>
+                    function Efetuado() {
+                        if (Efetuado == "") {
+                            alert("Preencha todos os campos");
+                            return;
+
+
+                        }
+                        else {
+                            alert("Candidatura efetuada");
+                        }
+                    }
+                </script>
+            </div>
+        </form>
+    </div>
+
+
+    <figure class="col">
+        <img class="rounded m-2" src="~/lib/Imagens/pexels-cliff-booth-4058058.jpg"  width="600" />
+        <figcaption>Foto de Cliff Booth no Pexels</figcaption>
+    </figure>
+
+</div>
