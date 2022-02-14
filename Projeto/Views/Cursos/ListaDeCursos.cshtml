@@ -5,7 +5,7 @@
 }
 
 <div class="container">
-    <h2 class="d-flex justify-content-center">Nossos Cursos:</h2>
+    <h2 class="d-flex justify-content-center">Baixe nossos e-books e saiba mais sobre cada trabalho!</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         @{
             foreach (var item in Model)
@@ -16,7 +16,7 @@
                         <div class="card-body ">
                             <h5 class="card-title">@item.Nome</h5>
                             <p class="card-text">@item.Descricao</p>
-                            <a asp-controller="Matriculas" asp-action="Matricular" class="btn btn-primary">Matricular-se</a>
+                            <a class="btn btn-primary">Download</a>
                         </div>
                     </div>
                 </div>
