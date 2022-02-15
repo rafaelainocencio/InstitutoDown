@@ -1,0 +1,68 @@
+﻿* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    margin: 0%;
+}
+
+@media (min-width: 750px) {
+
+    .foto_fundo {
+        background-image: url(../../wwwroot/lib/Imagens/imagem_de_fundo_full1080.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media(max-width: 749px) {
+    .foto_fundo {
+        background-image: url(../../wwwroot/lib/imagens/imagem_de_fundo_hd720.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+@media(max-width: 749px) {
+    (max-width: 520px) {
+        .foto_fundo
+
+{
+    background-image: url(../../wwwroot/lib/imagens/imagem_de_fundo_hd520jpg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+}
+
+@media(max-width: 749px) {
+    (max-width: 519px) {
+        .foto_fundo
+
+{
+    background-image: url(../../wwwroot/lib/imagens/imagem_de_fundo_hd360.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+}
+
+@media(max-width: 749px) {
+    .central {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
